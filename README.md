@@ -80,6 +80,10 @@ var HomeFn =
 };
 ```
 
+## Example of a Swagger UI
+
+<img src="swaggerui.png"/>
+
 ## Example of a OpenApi json file
 
 ```json
