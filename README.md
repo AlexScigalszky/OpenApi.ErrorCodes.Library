@@ -6,7 +6,7 @@ This is a library to show examples of error codes from a constants file to a def
 ## How to use
 * Create an attribute extending ´ResponseCodeFromConstantsDataAttribute´ to save your data.
 Example
-```
+```csharp
 [AttributeUsage(AttributeTargets.Field)]
 public class CodeSubCodeDescriptionLinkAttribute : ResponseCodeFromConstantsDataAttribute
 {
@@ -27,7 +27,7 @@ public class CodeSubCodeDescriptionLinkAttribute : ResponseCodeFromConstantsData
 * Create a Response class
 Example
 
-```
+```csharp
 public class CodeSubCodeResponse
 {
     public int Code { get; set; }
@@ -39,7 +39,7 @@ public class CodeSubCodeResponse
 
 * Create a mapping function
 Example
-```
+```csharp
 var MapAttributeToResponse = (CodeSubCodeDescriptionLinkAttribute data, int constant) =>
 {
     return new CodeSubCodeResponse()
@@ -53,7 +53,7 @@ var MapAttributeToResponse = (CodeSubCodeDescriptionLinkAttribute data, int cons
 ```
 
 * Add the OpenApi filter in your startup project
-```
+```csharp
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -70,7 +70,7 @@ builder.Services.AddSwaggerGen(c =>
 * Add attributo in your endpoint function. 
 It needs a section name and the class where the constant codes are defined
 Example
-```
+```csharp
 var HomeFn = 
     // add next line
     [ResponseCodeFromConstants("List of error codes", typeof(ResponseSubCodes))]
@@ -82,7 +82,7 @@ var HomeFn =
 
 ## Example of a OpenApi json file
 
-```
+```json
 {
   "openapi": "3.0.1",
   "info": {
