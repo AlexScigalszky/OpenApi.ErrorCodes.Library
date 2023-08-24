@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApi.ErrorCodes.Library", "OpenApi.ErrorCodes.Library\OpenApi.ErrorCodes.Library.csproj", "{8421B763-8510-4691-B82A-3451BA95554C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApi.ErrorCodes.Library.Console", "OpenApi.ErrorCodes.Library.Console\OpenApi.ErrorCodes.Library.Console.csproj", "{6CF27066-55C9-4198-9317-9B6000CEFF6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8421B763-8510-4691-B82A-3451BA95554C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8421B763-8510-4691-B82A-3451BA95554C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8421B763-8510-4691-B82A-3451BA95554C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8421B763-8510-4691-B82A-3451BA95554C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF27066-55C9-4198-9317-9B6000CEFF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF27066-55C9-4198-9317-9B6000CEFF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF27066-55C9-4198-9317-9B6000CEFF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF27066-55C9-4198-9317-9B6000CEFF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4D88582-06DD-49AB-AB1A-4B216D093210}
+	EndGlobalSection
+EndGlobal
